@@ -48,3 +48,18 @@ options:
                         The URL protocol to use (default: https)
 ```
 
+
+
+## Development
+
+### Requires
+
+```sh
+pip install -r requirements-dev.txt
+```
+
+### Test
+
+```
+pytest
+```
