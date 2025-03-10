@@ -11,7 +11,7 @@ setup(
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     install_requires=[],
-    extras_require={ 
+    extras_require={
         # pip install -e .[dev]
         'dev': [
             'pytest',
