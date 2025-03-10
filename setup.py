@@ -8,8 +8,8 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/khchanel/nsopen",
-    packages=find_packages(),
-    package_dir={"nsopen": "nsopen"},
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
     install_requires=[],
     entry_points={
         'console_scripts': [
