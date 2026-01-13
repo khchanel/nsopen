@@ -1,5 +1,7 @@
 # nsopen
 
+[![build](https://github.com/khchanel/nsopen/actions/workflows/python-app.yml/badge.svg)](https://github.com/khchanel/nsopen/actions/workflows/python-app.yml)
+
 A command-line tool to perform DNS lookups and open resolved IP addresses in a web browser.
 
 particularly useful when you have want to test stuff behind load-balancer which resolves into multiple server IP
