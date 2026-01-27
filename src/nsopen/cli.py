@@ -1,5 +1,5 @@
 import argparse
-from .nsopen import *
+from .nsopen import lookup, browser_open
 
 
 def main():
@@ -18,5 +18,3 @@ def main():
         browser_open(ip_addresses, args.protocol, args.path)
 
 
-if __name__ == "__main__":
-    main()

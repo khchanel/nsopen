@@ -1,0 +1,54 @@
+[build-system]
+# Keep using setuptools for builds; this makes your project PEP 517 compliant
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+# Use src layout consistent with your repository
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project]
+name = "nsopen"
+version = "0.1.0"
+description = "A tool to perform DNS lookup and open IP addresses in a browser"
+readme = { file = "README.md", content-type = "text/markdown" }
+authors = [{ name = "Nelson Chan" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/khchanel/nsopen.git"
+
+[project.optional-dependencies]
+# pip install .[dev]
+dev = [
+  "pytest",
+]
+
+[project.scripts]
+nsopen = "nsopen.cli:main"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra"
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 100
+target-version = ["py312", "py313"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.flake8]
+max-line-length = 100
+extend-ignore = ["E203", "W503"]
