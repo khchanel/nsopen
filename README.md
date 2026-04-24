@@ -7,6 +7,13 @@ A command-line tool to perform DNS lookups and open resolved IP addresses in a w
 Particularly useful when you want to test behind a load balancer that resolves into multiple server IPs.
 
 ## Installation
+
+### from pypi.org
+```sh
+python -m pip install nsopen
+```
+
+### from local dev
 ```sh
 python -m pip install .
 ```
